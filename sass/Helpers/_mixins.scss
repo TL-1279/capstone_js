@@ -1,0 +1,119 @@
+@mixin center($fd,$fj, $faligin) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // Viết 1 mixin để css cho text
+@mixin styleText($fs, $fw, $color) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $color;
+}
+
+// tạo 1 mixin để css cho button
+@mixin btn($bg, $border, $fs, $color, $pd, $border-radius) {
+  background: $bg;
+  border: 2px solid $border;
+  font-size: $fs;
+  color: $color;
+  padding: $pd;
+  border-radius: $border-radius;
+  transition: all 0.3s linear;
+
+  &:hover {
+      background: $color;
+      color: $bg;
+  }
+}
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+}
+
+
+
+.banner {
+  background-color: #fff;
+  padding: 50px;
+  text-align: center;
+  h2 {
+    font-size: 36px;
+    color: $primary-color;
+  }
+  .shop-now {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+}
+
+main {
+  display: flex;
+  margin: 20px;
+  .sidebar {
+    width: 20%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    h3 {
+      margin-bottom: 10px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        margin: 10px 0;
+        a {
+          text-decoration: none;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+  
+  .products {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    .product-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      h3 {
+        font-size: 20px;
+        color: $secondary-color;
+      }
+      .price {
+        font-size: 18px;
+        color: $primary-color;
+      }
+      .add-to-cart {
+        background-color: $primary-color;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          background-color: $hover-color;
+        }
+      }
+    }
+  }
+}
+
