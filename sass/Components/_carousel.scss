@@ -1,0 +1,46 @@
+
+/* Giao diện chung cho slider */
+.slider {
+  width: $slider-width; /* Điều chỉnh độ rộng slider */
+  margin: 0 auto; /* Căn giữa slider */
+
+  /* Cấu hình cho phần slider lớn */
+  &_for {
+    .slick-slide {
+      img {
+        width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của slide */
+        height: auto; /* Giữ tỷ lệ của ảnh */
+      }
+    }
+  }
+
+  /* Cấu hình cho phần thumbnail navigation */
+  &_nav {
+    display: flex;
+    justify-content: center;
+    margin-top: $slider-margin-top; /* Khoảng cách giữa phần chính và phần thumbnail */
+
+    .slick-slide {
+      width: $thumbnail-width; /* Kích thước thumbnail */
+      height: auto;
+      margin: 0 $thumbnail-margin; /* Khoảng cách giữa các thumbnail */
+
+      img {
+        width: 100%;
+        height: auto;
+        border: 2px solid $border-color-default; /* Border nhẹ cho các ảnh thu nhỏ */
+        transition: border-color 0.3s ease-in-out; /* Hiệu ứng chuyển border */
+      }
+
+      /* Khi thumbnail được chọn */
+      &.slick-current img {
+        border-color: $border-color-selected; /* Chọn border màu đỏ cho ảnh đang được chọn */
+      }
+
+      /* Hiệu ứng khi hover */
+      &:hover img {
+        border-color: $border-color-hover; /* Màu border thay đổi khi hover vào thumbnail */
+      }
+    }
+  }
+}
