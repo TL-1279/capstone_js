@@ -1,0 +1,26 @@
+//Helper
+@import "./Helpers/variable";
+@import "./Helpers/mixins";
+//Vendors
+
+//Base
+// @import "./Base/reset";
+
+//Components
+// @import "./Components/btn";
+// @import "./Components/title";
+@import "./Components/carousel.scss";
+@import "./Components/products";
+@import "./Components/login";
+@import "./Components/cart.scss";
+
+// Layout
+@import "./Layouts/header";
+@import "./Layouts/footer";
+
+// Pages
+// @import "./Pages/home";
+// @import "./Pages/contact";
+
+// Themes
+// @import "./Themes/dark_mode";

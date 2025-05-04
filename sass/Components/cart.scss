@@ -1,0 +1,94 @@
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background-image: $background;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .nav {
+    display: flex;
+    gap: 1rem;
+
+    .btn {
+      font-weight: 600;
+    }
+  }
+}
+
+.container {
+  margin-top: 100px;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: $primary-color;
+    text-align: center;
+  }
+
+  #cartSection {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+    #cartTable {
+      th, td {
+        vertical-align: middle;
+        text-align: center;
+      }
+
+      th {
+        background-color: $secondary-color;
+        color: white;
+      }
+
+      td {
+        background-color: #f1f2f6;
+      }
+    }
+
+    .text-end {
+      margin-top: 2rem;
+
+      h4 {
+        font-size: 1.5rem;
+        color: $primary-color;
+      }
+
+      #checkoutBtn {
+        margin-top: 1rem;
+        background-color: $success-color;
+        border: none;
+        padding: 0.75rem 2rem;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: darken($success-color, 10%);
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  margin-top: 5rem;
+  padding: 1rem;
+  background-color: $primary-color;
+  color: white;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,17 @@
+
+/* Giao diện chung cho slider */
+.slider {
+  width: $slider-width; /* Điều chỉnh độ rộng slider */
+  margin: 0 auto; /* Căn giữa slider */
+
+  /* Cấu hình cho phần slider lớn */
+  &_for {
+    .slick-slide {
+      img {
+        width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của slide */
+        height: auto; /* Giữ tỷ lệ của ảnh */
+        object-fit: cover;
+      }
+    }
+  }
+}

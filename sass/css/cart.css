@@ -1,0 +1,87 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  color: #2d3436;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background-color: #6c5ce7;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.header .nav {
+  display: flex;
+  gap: 1rem;
+}
+.header .nav .btn {
+  font-weight: 600;
+}
+
+.container {
+  margin-top: 100px;
+}
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #6c5ce7;
+  text-align: center;
+}
+.container #cartSection {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.container #cartSection #cartTable th, .container #cartSection #cartTable td {
+  vertical-align: middle;
+  text-align: center;
+}
+.container #cartSection #cartTable th {
+  background-color: #636e72;
+  color: white;
+}
+.container #cartSection #cartTable td {
+  background-color: #f1f2f6;
+}
+.container #cartSection .text-end {
+  margin-top: 2rem;
+}
+.container #cartSection .text-end h4 {
+  font-size: 1.5rem;
+  color: #6c5ce7;
+}
+.container #cartSection .text-end #checkoutBtn {
+  margin-top: 1rem;
+  background-color: #00b894;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+.container #cartSection .text-end #checkoutBtn:hover {
+  background-color: #00856b;
+}
+
+.footer {
+  margin-top: 5rem;
+  padding: 1rem;
+  background-color: #6c5ce7;
+  color: white;
+  font-size: 0.9rem;
+}/*# sourceMappingURL=cart.css.map */
